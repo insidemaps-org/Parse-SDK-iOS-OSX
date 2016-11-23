@@ -27,9 +27,9 @@
 #import "PFReachability.h"
 #endif
 
-// Keep retrying every 10 minutes for 24 hours
-NSUInteger const PFEventuallyQueueDefaultMaxAttemptsCount = 144;
-NSTimeInterval const PFEventuallyQueueDefaultTimeoutRetryInterval = 600.0f;
+// Keep retrying every 30 seconds for 24 hours
+NSUInteger const PFEventuallyQueueDefaultMaxAttemptsCount = 2880;
+NSTimeInterval const PFEventuallyQueueDefaultTimeoutRetryInterval = 30.0f;
 
 @interface PFEventuallyQueue ()
 #if !TARGET_OS_WATCH
